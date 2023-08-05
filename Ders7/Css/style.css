@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+#body {
+  background-color: rgb(123, 45, 179);
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 575px) {
+  .main {
+    max-width: 100%;
+  }
+}
+.main__container {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 575px) {
+  .main__container {
+    max-width: 100%;
+  }
+}
+.main__container_head {
+  margin-bottom: 50px;
+}
+@media (max-width: 575px) {
+  .main__container_head {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}
+.main__container_box_photo {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.main__container_div {
+  max-width: 100%;
+  height: auto;
+}
+.main__container_div_icon {
+  margin-bottom: 15px;
+}
+.main__container_info {
+  width: 30%;
+  height: auto;
+}
+@media (max-width: 575px) {
+  .main__container_info {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+.main__container_info_text {
+  margin-bottom: 15px;
+}
+.main__container_text {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+.main__container_paragraf {
+  font-size: 0.8rem;
+}/*# sourceMappingURL=style.css.map */

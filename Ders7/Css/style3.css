@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+@media (max-width: 575px) {
+  .main {
+    width: 100%;
+    height: 100vh;
+    display: block;
+  }
+}
+.main__div {
+  width: 100%;
+  height: 100vh;
+  background-color: #2A7CC7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10em;
+}
+@media (max-width: 575px) {
+  .main__div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+.main__div_first {
+  width: 24%;
+  margin-bottom: 40px;
+}
+@media (max-width: 575px) {
+  .main__div_first {
+    width: 50%;
+    height: auto;
+    text-align: center;
+  }
+}
+.main__div_first_head {
+  margin-bottom: 40px;
+}
+.main__div_first_text {
+  font-size: 12px;
+  opacity: 0.9;
+}
+.main__div_second {
+  width: 30%;
+  display: flex;
+}
+@media (max-width: 575px) {
+  .main__div_second {
+    width: 55%;
+    height: auto;
+  }
+}
+.main__div_second_photo_img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.main__div_second_degree_icon {
+  height: 15px;
+  margin-bottom: 20px;
+}
+.main__div_second_degree_text {
+  font-size: 12px;
+}
+.main__divs {
+  width: 100%;
+  background-image: url(../Image/resim1.jpg);
+  background-size: cover;
+}
+@media (max-width: 575px) {
+  .main__divs {
+    display: none;
+  }
+}/*# sourceMappingURL=style3.css.map */

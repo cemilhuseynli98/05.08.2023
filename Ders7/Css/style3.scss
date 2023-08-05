@@ -1,0 +1,125 @@
+@import "mixins";
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+
+}
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @include mobile{
+
+        width: 100%;
+        height: 100vh;
+        display: block;
+        
+     }
+
+    &__div{
+        width: 100%;
+        height: 100vh;
+        background-color: #2A7CC7;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10em;
+        
+        
+
+        @include mobile{
+          width: 100%;
+          height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         padding: 0;
+         
+            
+        }
+
+        &_first{
+          width: 24%;
+          margin-bottom: 40px;
+        
+          @include mobile{
+           width: 50%;
+            height: auto;
+            text-align: center;
+        }
+
+
+            &_head{
+                margin-bottom: 40px;
+                
+
+            }
+            &_text{
+                font-size: 12px;
+                opacity: 0.9;
+                
+
+
+
+            }
+        }
+
+        &_second{
+            width: 30%;
+            display: flex;
+           
+            @include mobile{
+                width: 55%;
+                 height: auto;
+                
+             }
+         
+
+            &_photo{
+                &_img{
+
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    
+                }
+            }
+            &_degree{
+               
+
+                &_icon{
+                   height: 15px ;
+                   margin-bottom: 20px ;
+
+                }
+    
+                &_text{
+    
+                    font-size: 12px ;
+                    
+                }
+
+            }
+           
+        }
+    }
+
+    &__divs{
+        width: 100%;
+       
+      background-image: url(../Image/resim1.jpg);
+        background-size: cover;
+
+         @include mobile{
+
+            display: none;
+            
+         }
+    }
+}
